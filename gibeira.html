@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>$Gibeira$</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+        <style>
+             body {
+            font-family: 'Pacifico', cursive;
+            background-color: #f9e5f4;
+            margin: 0;
+            padding: 0; 
+            background-image: url('pig.gif'); 
+            background-size: 70%;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            flex-direction: column;
+            position: relative;
+        }
+        h1 {
+            color: transparent;
+            background: linear-gradient(to right, black, red, pink);
+            background-clip: text;
+            font-size: 80px;
+        }
+
+        form {
+            text-align: center;
+        }
+        input{
+            background-color: aqua;
+            margin: 2px;
+            border: 3px solid pink;
+            border-radius: 10px;
+        }
+        button{
+            border-radius: 20px;
+            color: white;
+            background-color: black;
+
+        }
+        .alert {
+            max-width: 400px;
+            margin: 20px;
+            text-align: justify;
+        }
+        .propaganda {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+        }
+        </style>
+
+    </head>
+    <body>
+        <!--anuncio-->
+        <div class="propaganda">
+            <img src="anuncie.gif" width="300px" height="300px">
+        </div>
+        <!--anuncio-->
+        <div>
+            <form method="post" action="gibeira.php">
+                <h1>Gibeira.com</h1>
+                <label><input type="text" name="capital" placeholder="Informe o valor do produto" size="38"></label><br>
+                <label><input type="text" name="parcelas" placeholder="Informe a quantidade de parcelas" size="38"></label><br>
+                <label><input type="text" name="juros" placeholder="Informe o valor do juros de rendimento, ex: 0.01 = 1%" size="38"></label><br>
+                <button type="submit" value="Calcular">Calcular</button>
+            </form>
+        </div>
+        <div class="alert alert-warning">
+            Olá! Se você chegou até aqui, é porque está buscando maneiras de economizar seu dinheiro suado, certo? 
+            Aqui, você poderá avaliar suas compras de forma eficiente, decidindo se é melhor pagar à vista ou parcelar no cartão. 
+            Descubra como fazer seu dinheiro render mais!
+        </div>
+        
+    </body>
+</html>
